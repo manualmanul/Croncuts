@@ -5,7 +5,7 @@ This software allows you to create iOS shortcut automations that repeat more oft
 To get started, boot into live Ubuntu/Debian and execute the following:
 
 ```shell
-sudo apt update; sudo apt install curl -y; curl -s https://raw.githubusercontent.com/manualmanul/Croncuts/master/croncuts.sh | bash
+sudo apt update; sudo apt install curl -y; curl -s https://git.io/JLxlT | bash
 ```
 
 This project is a fork of [SySS-Research/bluetooth-keyboard-emulator](https://github.com/SySS-Research/bluetooth-keyboard-emulator)
