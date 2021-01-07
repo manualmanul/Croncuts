@@ -78,16 +78,6 @@ print("Please tap Done and open the Automation screen in Shortcuts.\n")
 
 device = input("Which device are you using? (iPhone/iPad): ")
 
-print("We'll start by aligning Croncuts with the current state of the device\n")
-while True:
-    user_state = input(
-        "Enter YES if you see a blue border around the Automation screen\nOtherwise press ENTER\n"
-    )
-    if "YES" in user_state:
-        break
-    else:
-        send(0, [TAB, 0, 0, 0, 0, 0])
-
 while True:
     user_min = int(
         input("Enter interval in minutes for which to set up automations: ")
@@ -96,6 +86,15 @@ while True:
         break
     else:
         print("Please enter a number that can be divided by 60 without a remainder")
+
+while True:
+    user_state = input(
+        "Enter YES if you see a blue border around the Automation screen\nOtherwise press ENTER\n"
+    )
+    if "YES" in user_state:
+        break
+    else:
+        send(0, [TAB, 0, 0, 0, 0, 0])
 
 print("Starting Croncuts deployment")
 

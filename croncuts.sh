@@ -1,4 +1,4 @@
-#!/usr/bin/env
+#!/usr/bin/env bash
 
 set -e
 
@@ -13,7 +13,7 @@ sudo apt install bluez git python3 python3-pip tmux dbus libbluetooth-dev -y
 sudo apt install bluez-utils -y || apt install bluez-utils -y || true # apt sometimes doesn't immediately find bluez-utils
 
 echo 'Installing pip3 dependencies'
-pip3 install pynput dbus-python pybluez
+sudo pip3 install dbus-python pybluez
 
 echo 'Cloning manualmanul/Croncuts.git'
 git clone https://github.com/manualmanul/Croncuts.git
@@ -22,4 +22,4 @@ echo 'Setting up manualmanul/Croncuts.git'
 cd Croncuts
 sudo ./setup.sh
 
-echo '\nPlease run "sudo ./start.sh" to start Croncuts'
+echo '\nPlease run "cd Croncuts; sudo ./start.sh" to start Croncuts'
