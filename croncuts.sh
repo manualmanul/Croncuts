@@ -19,7 +19,7 @@ echo 'Cloning manualmanul/Croncuts.git'
 git clone https://github.com/manualmanul/Croncuts.git
 
 echo 'Setting up manualmanul/Croncuts.git'
-cd bluetooth-keyboard-emulator
+cd Croncuts
 sudo ./setup.sh
 
 echo 'Starting bluetooth keyboard emulator'
