@@ -6,11 +6,11 @@ echo 'Initializing Croncuts'
 echo
 
 echo 'Installing dependencies'
-apt update
-apt-add-repository universe
-apt update
-apt install bluez git python3 python3-pip tmux dbus -y
-apt install bluez-utils -y || apt install bluez-utils -y || true # apt sometimes doesn't immediately find bluez-utils
+sudo apt update
+sudo apt-add-repository universe
+sudo apt update
+sudo apt install bluez git python3 python3-pip tmux dbus -y
+sudo apt install bluez-utils -y || apt install bluez-utils -y || true # apt sometimes doesn't immediately find bluez-utils
 
 echo 'Installing pip3 dependencies'
 pip3 install pynput dbus-python pybluez
