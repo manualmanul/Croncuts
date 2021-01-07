@@ -57,18 +57,24 @@ Welcome to Croncuts!
 
 Please follow these instructions:
 
-0. Connect your phone to a bluetooth device "Croncuts_Keyboard"
+0. Connect your phone to a bluetooth device "BlueZ"
 1. Set device language to English
 2. Set time to 24 hours
 3. Enable airplane mode w/ bluetooth
 4. Go to Accessibility > Keyboard > Full keyboard access > Enable
 5. Swipe to close the Shortcuts app and open it again
-6. Go to the automation screen
-7. Set up at least one automation
-8. Set up a shortcut with a name like "Every X minutes"
+6. Set up at least one automation
+7. Set up a shortcut with a name like "Every X minutes"
+
+Once done, go to Accessibility > Keyboard > Full keyboard access > Commands > Touch
+and press enter when the phone asks you for input.
 
 """
 )
+
+input()
+send(0, [0x13, 0, 0, 0, 0, 0])
+print("Please tap Done and open the Automation screen in Shortcuts.\n")
 
 device = input("Which device are you using? (iPhone/iPad): ")
 

@@ -20,3 +20,5 @@ if [ $? != 0 ]; then
     tmux send-keys -t kbdemu:os.3 'cd $C_PATH/keyboard/ && sleep 5 && sudo python3 keyboard_client.py' C-m
     tmux send-keys -t kbdemu:os.4 'cd $C_PATH/agent/ && sleep 5 && sudo python3 simple-agent.py' C-m
 fi
+
+sudo tmux attach -t kbdemu
